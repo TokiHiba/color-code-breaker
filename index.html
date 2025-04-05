@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Code Breaker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <h1>Color Code Breaker</h1>
+
+    <!-- Difficulty selection -->
+    <div id="difficulty-selection">
+      <button onclick="startGame('easy')">Normal Mode</button>
+      <button onclick="startGame('hard')">Hard Mode</button>
+    </div>
+
+    <!-- Game display -->
+    <div id="game-display" style="display: none;">
+      <div id="color-buttons"></div>
+      <div id="guess-container"></div>
+      <div id="feedback-container"></div>
+      <button onclick="resetGame()">Reset Game</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
